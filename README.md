@@ -7,7 +7,7 @@ Compile-time weaving with [Lombok](http://projectlombok.org)
 
 ### Run ###
 ```
-mvn compile exec:java
+mvn clean compile package exec:java
 ```
 
 ### Create executable jar with dependencies ###
