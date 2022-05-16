@@ -2,6 +2,7 @@ package li.barlog.asjex;
 
 import lombok.Data;
 import lombok.extern.java.Log;
+import org.apache.commons.text.similarity.CosineDistance;
 
 import java.util.logging.Level;
 
@@ -12,4 +13,7 @@ public class Foo {
     public void foo() {
         log.log(Level.SEVERE, "foo");
     }
+	public Double wordDistance(String left) {
+		return new CosineDistance().apply(left, this.toString());
+	}
 }

@@ -7,6 +7,6 @@ public class App {
 		foo.setI(-1);
 		foo.setI(42);
 		System.out.println("Finally foo.getI()="+foo.getI());
-
+		System.out.println("Distance="+foo.wordDistance("Foo(left)"));
 	}
 }
